@@ -1,0 +1,102 @@
+/* estilo da pagina contatos */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ruslan+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDB927;
+}
+
+header img{
+    height:15%;
+    width: 12%;
+}
+
+.nav-bar{
+    font-size: 40px;
+    list-style-type: none;
+    display: flex;
+
+    justify-content: space-between;
+    background-color: #552583;
+    box-shadow: 0 0 2rem #552583;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-bar a{
+    font-family: 'Dancing Script';
+    color: #FDB927;
+    cursor: pointer;
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: black solid;
+    background-color: #552583;
+    width: 50%;
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem #000000;
+
+    font-family: 'Ruslan Display';
+    color: #FDB927
+}
+
+.button {
+    font-family: 'Ruslan Display';
+    border-radius: 4px;
+    color: #552583;
+    background-color: #FDB927;
+
+    padding: 10px;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    padding: 3%;
+
+    border: black solid;
+    border-radius: 10px;
+    background-color: #552583;
+    box-shadow: 0 0 2rem #000000;
+
+    font-family: 'Ruslan Display';
+    color: #FDB927
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: black solid;
+    background-color: #552583;
+    width: 45%;
+    margin: 5% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem #000000;
+
+}

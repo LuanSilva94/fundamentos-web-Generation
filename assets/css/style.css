@@ -1,0 +1,107 @@
+/* estilo da página index */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ruslan+Display&display=swap');
+
+/* reset da página e seus parametros padrão */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #552583 ;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    font-family: 'Dancing Script';
+}
+
+h2{
+    color:#552583;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Dancing Script';
+}
+
+body{
+    background-color: #FDB927;
+}
+
+header img{
+    width: 15%;
+}
+
+/* utiliza ponto para chamar uma classe */
+.nav-bar{
+    font-size: 40px;
+    list-style-type: none;
+    display: flex;
+
+    justify-content: space-between;
+    background-color: #552583;
+    box-shadow: 0 0 2rem #552583;
+
+    height: 20%;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-bar a{
+    font-family: 'Dancing Script';
+    color: #FDB927;
+    cursor: pointer;
+}
+/* como a tag <a> não faz parte da lista <ul> (nav-bar)
+precisamos especificar para retirar o underline
+e para ser especificos colocamos como .nav-bar a 
+para que saia o underline apenas dos link da classe
+nav-bar
+*/
+.nav-bar a{
+    text-decoration: none;
+    /*margin: 20px,10px,20px,20px;
+    ordem: cima, direita, baixo, esquerda (sentido horário) */
+}
+
+.banner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: black solid;
+    background-color: #552583;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem #000000;
+}
+
+.banner p{
+    font-size: 18px;
+    color: #FDB927;
+    font-weight: bold;
+}
+
+.banner img{
+    width: 50%;
+    height: 75%;
+}
+
+.kobe-video{
+    width: 75%;
+
+    aspect-ratio: 16/9;
+    /* altera a proporção, torna o video responsivo */
+    margin: 0 auto 40px;
+    display: block;
+}
+
