@@ -1,11 +1,21 @@
 /* estilo da página index */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ruslan+Display&display=swap');
 
+:root{
+    --main-bg-collor: #FDB927;
+    --purple-la:#552583;
+}
+
 /* reset da página e seus parametros padrão */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+
+body{
+    background-color: #FDB927;
 }
 
 h1{
@@ -27,49 +37,44 @@ h2{
     font-family: 'Dancing Script';
 }
 
-body{
-    background-color: #FDB927;
+.form h2{
+    color:var(--main-bg-collor);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Dancing Script';
 }
 
-header img{
-    width: 15%;
-}
-
-/* utiliza ponto para chamar uma classe */
 .nav-bar{
-    font-size: 40px;
-    list-style-type: none;
+    font-size: 4rem;
     display: flex;
 
     justify-content: space-between;
-    background-color: #552583;
-    box-shadow: 0 0 2rem #552583;
+    background-color: var(--purple-la);
+    box-shadow: 0 0 2rem --purple-la;
 
     height: 20%;
 }
 
+.nav-bar img{
+    width: 15%;
+}
+
 .nav-bar ul{
     display: flex;
-    align-items: center;
+    align-items:  center;
+    align-items: left;
     list-style: none;
-    gap: 40px;
+    margin-right: 10rem;
+    gap: 4rem;
 }
 
 .nav-bar a{
     font-family: 'Dancing Script';
     color: #FDB927;
     cursor: pointer;
-}
-/* como a tag <a> não faz parte da lista <ul> (nav-bar)
-precisamos especificar para retirar o underline
-e para ser especificos colocamos como .nav-bar a 
-para que saia o underline apenas dos link da classe
-nav-bar
-*/
-.nav-bar a{
     text-decoration: none;
-    /*margin: 20px,10px,20px,20px;
-    ordem: cima, direita, baixo, esquerda (sentido horário) */
 }
 
 .banner {
@@ -77,23 +82,24 @@ nav-bar
     gap: 10px;
     align-items: center;
     border: black solid;
-    background-color: #552583;
+    background-color: var(--purple-la);
     width: 75%;
     margin: 0 auto;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 2rem #000000;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem var(--purple-la);
+    gap: 2rem;
 }
 
 .banner p{
     font-size: 18px;
-    color: #FDB927;
+    color: var(--main-bg-collor);
     font-weight: bold;
 }
 
 .banner img{
-    width: 50%;
-    height: 75%;
+    width: 40%;
+    height: 85%;
 }
 
 .kobe-video{
@@ -105,3 +111,92 @@ nav-bar
     display: block;
 }
 
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.redes img{
+    width: 3%;
+}
+
+footer p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+    color: var(--purple-la);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: black solid;
+    background-color: var(--purple-la);
+    width: 50%;
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem var(--purple-la);
+
+    font-family: 'Ruslan Display';
+    color: #FDB927
+}
+
+.button {
+    font-family: 'Ruslan Display';
+    border-radius: 4px;
+    color: #552583;
+    background-color: #FDB927;
+
+    padding: 10px;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    padding: 3%;
+
+    border: black solid;
+    border-radius: 10px;
+    background-color: #552583;
+    box-shadow: 0 0 2rem #000000;
+
+    font-family: 'Ruslan Display';
+    color: #FDB927
+}
+
+.adress h2{
+    color:var(--main-bg-collor);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Dancing Script';
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: black solid;
+    background-color: #552583;
+    width: 45%;
+    margin: 5% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem #000000;
+
+}
