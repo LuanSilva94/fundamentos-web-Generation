@@ -79,7 +79,7 @@ h2{
 
 .banner {
     display: flex;
-    gap: 10px;
+    gap: 2rem;
     align-items: center;
     border: black solid;
     background-color: var(--purple-la);
@@ -119,7 +119,7 @@ h2{
 }
 
 .redes img{
-    width: 3%;
+    width: 2rem;
 }
 
 footer p{
@@ -198,5 +198,5 @@ footer p{
     margin: 5% auto;
     border-radius: 10px;
     box-shadow: 0 0 2rem #000000;
-
 }
+
